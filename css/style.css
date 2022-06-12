@@ -7409,6 +7409,9 @@ ul.list li {
     .block-contents ul li{
         text-align: left;
     }
+    .app-btns img{
+        height: 45px;
+    }
 }
 
 @media (max-width: 767px) {
