@@ -7528,3 +7528,6 @@ ul.list li {
 
 @media (max-width: 485px) {
 }
+.text-left{
+    text-align: left!important;
+}
