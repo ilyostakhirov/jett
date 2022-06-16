@@ -49,6 +49,11 @@
             });
         }
 
+        $('.open').click(function () {
+            $(this).toggleClass('clicked active');
+            $(this).find('span').toggleClass('actived');
+        });
+
         if($('.testimonial-nav-carousel-active').length > 0) {
             $('.testimonial-nav-carousel-active').slick({
                 slidesToShow: 3,

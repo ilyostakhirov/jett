@@ -2914,42 +2914,150 @@ header.header-1 .header-right-element .color-2 {
 header.header-1 .header-right-element .color-2:hover {
     color: #2eca96;
 }
-
+.search-input{
+    background: #ffffff url(../img/search.svg) no-repeat 10px center;
+    padding-left: 40px;
+    border-radius: 8px;
+    border: none;
+    font-size: 14px;
+}
 .page-banner-wrap {
-    background-color: #2eca96;
-    padding-top: 155px;
-    padding-bottom: 100px;
+    padding-top: 105px;
+    padding-bottom: 50px;
     position: relative;
     z-index: 1;
     overflow: hidden;
 }
-
-@media (max-width: 991px) {
-    .page-banner-wrap {
-        padding-top: 140px;
-        padding-bottom: 70px;
-    }
+.page-banner-wrap .row{
+    background: #F5F5F5;
+    border-radius: 15px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
-
-@media (max-width: 767px) {
-    .page-banner-wrap {
-        padding-top: 120px;
-        padding-bottom: 60px;
-    }
-}
-
-@media (max-width: 500px) {
-    .page-banner-wrap {
-        padding-top: 100px;
-        padding-bottom: 50px;
-    }
+.search p{
+    font-size: 12px;
+    line-height: 20px;
+    color: #8C8C8C;
+    margin-top: 20px;
 }
 
 .page-banner-wrap h1 {
-    font-size: 36px;
+    font-size: 50px;
     margin-bottom: 20px;
 }
+.main-title{
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 50px;
+    margin-bottom: 50px;
+    margin-top:30px;
+}
+.content{
+    font-size: 16px;
+    line-height: 25px;
+}
+.content ul{
+    padding-left: 20px;
+    margin-bottom: 50px;
+}
+.content li{
+    list-style: disc;
+    margin-bottom: 30px;
+}
+.content p{
+    margin-bottom: 30px;
+}
+.s-title{
+    font-weight: 700;
+    font-size: 25px;
+}
+.content a{
+    color: #000000;
+}
+.content a:hover{
+    text-decoration: underline;
+}
+.breadcrumb-item a,.breadcrumb-item{
+    font-size: 16px;
+    color: #BDBDBD!important;
+    font-weight: 400;
+}
+.sidebar-nav {
+    list-style: none;
+    font-size: 16px;
+    position: relative;
+    overflow: hidden;
+}
 
+.sidebar-nav li {
+    color: #c0bfc1;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+ul.sidebar-nav li a {
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+    overflow: hidden;
+}
+.sidebar-nav li a:hover {
+    color: #BDBDBD;
+}
+ul.sidebar-nav > li{
+    margin-bottom: 30px;
+}
+.sidebar-nav  .nav-name {
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: #646464;
+}
+
+.sidebar-nav .drop {
+    list-style: none;
+    display: block;
+    max-height: 0;
+    transition: max-height .3s;
+    padding-left: 30px;
+    border-left: 2px solid #ECECEC;
+    margin-left: 27px;
+}
+
+.drop > li {
+    margin: 15px 5px;
+}
+.sidebar-nav .clicked > a{
+    color: #BDBDBD;
+}
+.sidebar-nav  .arrow {
+    position: relative;
+    top: 9px;
+    float: left;
+    display: inline-block;
+    border-right: 0.14em solid;
+    border-bottom: 0.14em solid;
+    width: 8px;
+    height: 8px;
+    transform: rotate(-45deg);
+    margin-left: 2px;
+    transition: ease-in 0.2s;
+    margin-right: 17px;
+}
+
+.sidebar-nav  .active .drop {
+    max-height: 250px;
+    transition: max-height 1s ease-out;
+}
+
+.sidebar-nav  .actived {
+    top: 7px;
+    transform: rotate(45deg) !important;
+}
+
+.sidebar-nav  .clicked {
+
+}
 @media (max-width: 991px) {
     .page-banner-wrap h1 {
         font-size: 28px;
@@ -2960,24 +3068,6 @@ header.header-1 .header-right-element .color-2:hover {
     .page-banner-wrap h1 {
         font-size: 26px;
         line-height: 1.3;
-    }
-}
-
-.page-banner-wrap p {
-    font-size: 18px;
-    margin-top: 5px;
-}
-
-@media (max-width: 767px) {
-    .page-banner-wrap p {
-        font-size: 18px;
-        margin-top: 20px;
-    }
-}
-
-@media (max-width: 500px) {
-    .page-banner-wrap p {
-        font-size: 17px;
     }
 }
 
@@ -7411,6 +7501,19 @@ ul.list li {
     }
     .app-btns img{
         height: 45px;
+    }
+    .main-title {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 35px;
+        margin-bottom: 30px;
+        margin-top: 20px;
+    }
+    .page-banner-wrap{
+        padding-bottom: 20px;
+    }
+    ul.sidebar-nav > li {
+        margin-bottom: 10px;
     }
 }
 
